@@ -278,16 +278,26 @@ html, body {
   background-color: #265e53;
   padding: 2%; }
 
-.footer__navigation__item {
+.footer__navigation {
+  -webkit-filter: url("#goo");
+  filter: url("../menu.html#goo");
+  width: 50px; }
+
+.menu__items__item {
   padding: 1%;
   display: inline-block;
-  width: 50px; }
-  .footer__navigation__item a {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 40px; }
+  .menu__items__item:hover {
+    color: #b3b3b3;
+    left: 80px;
+    -webkit-transition: all 1s ease-in-out; }
+  .menu__items__item a {
     color: white;
     text-decoration: none; }
-    .footer__navigation__item a:hover {
-      color: #b3b3b3;
-      transition: 0.3 linear; }
 
 .contatti {
   width: 90%;
