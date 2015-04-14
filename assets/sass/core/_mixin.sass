@@ -1,0 +1,47 @@
+=vertical-center
+	display: block
+	&:before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		//margin-right: -0.25em
+
+	> *
+		width: 97%
+		display: inline-block
+		vertical-align: middle
+
+=vertical-bottom
+	display: block
+	&:before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: baseline
+		//margin-right: -0.25em
+
+	> *
+		width: 97%
+		display: inline-block
+		vertical-align: baseline
+@mixin base
+	float: left
+	position: relative
+
+%clearfix 
+	&:after 
+		content: ""
+		display: table
+		clear: both
+
+%font-sans-regular
+	font-family: $font-sans-regular
+
+%font-sans-bold
+	font-family: $font-sans-bold
+
+%font-sans-light
+	font-family: $font-sans-light
+%font-sans-hairline
+	font-family: $font-sans-hairline

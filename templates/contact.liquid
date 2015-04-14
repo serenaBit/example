@@ -1,0 +1,36 @@
+{% block content %} 
+<div class="content">
+	<form class="contatti">
+		<label class="contatti__label" for="name">Nome*</label> 
+			<input class="contatti__text" type="text" name="name" id="name" tabindex="1" autofocus required placeholder="Nome"/>
+		<label class="contatti__label" for="surname">Cognome</label> 
+			<input class="contatti__text"  type="text" name="surname" id="surname" tabindex="2" placeholder="Cognome" />
+		<label class="contatti__label" for="email">Email*</label> 
+			<input id="email" class="contatti__text"  type="email" name="email" tabindex="3" required placeholder="Email" />
+		<label class="contatti__label" for="age">Età</label>
+			<input id="age" class="contatti__number" type="number" name="age" min="18" max="60" tabindex="4" placeholder="Età"/>
+		<fieldset class="contatti__radio">
+			<legend class="contatti__radio__legend">Seleziona</legend>
+			<input id="female" type="radio" name="sex" value="female" tabindex="5" />
+	   		<label class="contatti__radio__label" for="female">Donna</label><br/>
+	   		
+	 		<input id="male" type="radio" name="sex" value="male" tabindex="6" />
+	    	<label class="contatti__radio__label" for="male">Uomo</label><br/>
+		</fieldset>
+		<textarea class="contatti__textarea" name="message" tabindex="7" required placeholder="Scrivi qui il tuo messaggio" rows="6" ></textarea>
+		<label class="contatti__label" for="file">Carica file</label><input id="file" type="file" name="file" tabindex="8">
+
+		<input class="contatti__submit" type="submit" name="submit" value="Invia" tabindex="9" >
+	</form>
+</div>
+
+<svg height="200" width="200">
+  <polygon points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+  <polygon class="uno" points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+  <polygon class="due" points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+  <polygon class="tre" points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+  <polygon class="quattro" points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+  <polygon class="cinque" points="0,0 86.60,50 0,100" style="fill:lime;stroke:purple;stroke-width:1" />
+
+</svg>
+{% endblock %}

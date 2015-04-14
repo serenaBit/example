@@ -1,0 +1,16 @@
+.footer
+	@include base
+	width: 100%
+	background-color: darken($backColor, 30%)
+	padding: 2%
+
+.footer__navigation__item
+	padding: 1%
+	display: inline-block
+	width: 50px
+	a
+		color: $fontColor
+		text-decoration: none
+		&:hover
+			color: darken($fontColor, 30%)
+			transition: 0.3 linear

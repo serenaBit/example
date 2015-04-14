@@ -1,0 +1,17 @@
+$fontColor: white
+$backColor: #5FBEAC
+
+*
+	box-sizing: border-box
+
+.cf:before, .cf:after 
+	content: ' '
+	display: table
+
+.cf:after 
+	clear: both
+
+html, body 
+	height: 100%
+	@extend %font-sans-regular
+	font-size: 16px
